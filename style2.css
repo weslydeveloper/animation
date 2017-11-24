@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+}
+
+#go {
+    margin-top: 30px;
+    width: 110px;
+    margin-left: 310px;
+}
+
+.blok {
+    position: absolute;
+    bottom: 100px;
+    float: left;
+    width: 5px;
+}
+
+
+.up {
+    animation: up;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes up {
+    0% {
+        bottom: 100px;
+        height: 10px;
+    }
+    50% {
+        bottom: 55px;
+        height: 100px;
+    }
+    100% {
+        bottom: 100px;
+        height: 10px;
+    }
+}
